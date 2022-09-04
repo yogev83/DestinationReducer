@@ -7,3 +7,9 @@
 .filter span select {
     margin-right: 10px;
 }
+
+.filter .reset {
+    font-size: large;
+    color: purple;
+    font-weight: bolder;
+}

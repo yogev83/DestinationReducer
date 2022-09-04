@@ -67,6 +67,13 @@ function App() {
     [updateStorage]
   );
 
+  const reset = React.useCallback(() => {
+    for (const dest in destinationsCollection) {
+      sessionStorage.removeItem(dest);
+    }
+    setDestinationsCollection(destinations);
+  }, [destinationsCollection]);
+
   React.useEffect(() => {
     let savedBuffer;
     let savedObjectBuffer;
@@ -106,6 +113,7 @@ function App() {
             setMaxDrive={setMaxDrive}
             sortBy={sortBy}
             setSortBy={setSortBy}
+            reset={reset}
           />
           <DestinationSelection
             destinations={filteredDestinations}

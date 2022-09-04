@@ -3,7 +3,7 @@ import "./filter.css";
 
 const times = new Array(7).fill(1).map((_, i) => i + 1);
 
-export const Filter = ({ maxDrive, setMaxDrive, sortBy, setSortBy }) => {
+export const Filter = ({ maxDrive, setMaxDrive, sortBy, setSortBy, reset }) => {
   const maxDrivingOptions = React.useMemo(() => {
     return times.map((time) => {
       return (
@@ -16,6 +16,9 @@ export const Filter = ({ maxDrive, setMaxDrive, sortBy, setSortBy }) => {
 
   return (
     <div className="filter">
+      <span className="reset" onClick={reset}>
+        &#x21bb;
+      </span>
       <span>
         <select
           value={maxDrive}

@@ -17,7 +17,6 @@
 }
 
 .rating .heart:after {
-    font-size: x-large;
     content: "\2661";
 }
 
