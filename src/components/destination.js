@@ -43,7 +43,9 @@ export const Destination = ({
         <h3 className="desc">{desc}</h3>
         <div className="drivingTime">זמן נסיעה: {distance} שעות</div>
         {attractionsContent}
-        <a href={website}>אתר</a>
+        <a href={website} target="_blank" rel="noreferrer">
+          אתר
+        </a>
         <Gallery images={images} />
         <Rating rating={rating} setRating={setRating} />
       </div>

@@ -17,9 +17,12 @@
 }
 
 .rating .heart:after {
+    font-size: larger;
     content: "\2661";
 }
 
 .rating .heart.active:after {
+    color: red;
+    font-size: larger;
     content: "\2665";
 }

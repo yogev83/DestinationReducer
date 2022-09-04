@@ -38,7 +38,7 @@ function App() {
   }, [destinationsCollection, maxDrive, sortBy]);
 
   const updateStorage = React.useCallback((dest, key, value) => {
-    const currentData = JSON.parse(sessionStorage.getItem(dest));
+    const currentData = JSON.parse(localStorage.getItem(dest));
     const newData = { ...currentData, [key]: value };
     localStorage.setItem(dest, JSON.stringify(newData));
   }, []);
@@ -69,9 +69,9 @@ function App() {
 
   const reset = React.useCallback(() => {
     for (const dest in destinationsCollection) {
-      sessionStorage.removeItem(dest);
+      localStorage.removeItem(dest);
     }
-    setDestinationsCollection(destinations);
+    window.location.reload();
   }, [destinationsCollection]);
 
   React.useEffect(() => {
