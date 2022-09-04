@@ -1,0 +1,40 @@
+.destinationsSelection .destinationItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 30px;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 12px;
+}
+
+.destinationsSelection .destinationItem .drivingTime {
+    color: rgba(38, 139, 20, 0.719);
+}
+
+.destTitle .destDesc {
+    margin-top: -1em;
+    font-size: smaller;
+    font-weight: bold;
+    color: #999;
+}
+
+.removeDest {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+    position: relative;
+    font-size: larger;
+    text-align: end;
+}
+
+.removeDest:after {
+    content: "\00d7";
+}
+
+.destinationItem .destRating div:after {
+    content: "\2665";
+    color: red;
+    font-size: larger;
+}

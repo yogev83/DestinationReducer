@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.App header.title {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin: 30px;
+}

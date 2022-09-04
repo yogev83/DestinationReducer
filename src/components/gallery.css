@@ -1,0 +1,7 @@
+.gallery {
+    position: relative;
+}
+
+.gallery img {
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+.rating {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating span {
+    flex: 1;
+}
+
+.rating span.hearts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rating span.hearts .heartsContainer {
+    display: flex;
+}
+
+.rating .heart:after {
+    font-size: x-large;
+    content: "\2661";
+}
+
+.rating .heart.active:after {
+    content: "\2665";
+}

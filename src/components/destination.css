@@ -1,0 +1,49 @@
+.destination {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.destination .drivingTime {
+    color: rgba(38, 139, 20, 0.719);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.destination > .desc {
+    color: #666;
+}
+
+
+.destination > * {
+    margin-bottom: 30px;
+}
+
+.destination fieldset.attrations legend {
+    font-weight: bold;
+}
+
+.destination fieldset.attrations ul {
+    padding: 0;
+    list-style: none;
+}
+
+.destination fieldset.attrations ul li {
+    margin: 10px;
+}
+
+.destination header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination .back, .destination .remove {
+    margin-bottom: 0;
+    position: relative;
+    text-align: left;
+    color: purple;
+}
+
+.destination .destName {
+    margin-top: -20px;
+}
