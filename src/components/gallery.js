@@ -5,6 +5,7 @@ export const Gallery = ({ images }) => {
   const [state, setState] = React.useState(0);
 
   const imageDivs = React.useMemo(() => {
+    // eslint-disable-next-line jsx-a11y/alt-text
     return images.map((img, i) => <img key={i} src={img}></img>);
   }, [images]);
 
